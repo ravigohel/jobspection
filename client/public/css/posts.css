@@ -1,0 +1,22 @@
+.post-container {
+    margin-top: 5%;   
+}
+
+.post-form {
+    padding: 3%;
+    background: -webkit-linear-gradient(left, #008080, #01c4c4);
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+
+.post-form .btn-success {
+    border: none;
+    background-color: #008080;
+    border-radius: 1.5rem;
+    width: 30%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.post-form .btn-success:hover{
+    background-color: #01c4c4;
+}

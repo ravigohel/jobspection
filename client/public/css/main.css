@@ -1,0 +1,335 @@
+body {
+    overflow-x: hidden;
+    background-color: #ececec;
+}
+
+#root {
+    /*font-family: "Slabo 27px", serif;*/
+    /*font-family: "Raleway", sans-serif;*/
+    font-family: "Hind", sans-serif;
+}
+
+.marginContainer {
+    margin-top: 75px;
+    min-height: 485px;
+}
+
+.sticky-top {
+    top: 10%;
+}
+
+.bg-main {
+    background-color: #008080;
+}
+
+.text-main {
+    color: #008080;
+}
+
+header {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+    header {
+        background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black no-repeat center center scroll;
+    }
+    header video {
+        display: none;
+    }
+}
+
+.navbar .nav-link {
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+}
+
+.navbar .nav-item.active {
+    border-left: #444 3px solid;
+}
+
+.navbar.navbar-inner {
+    background-color: #4682b4;
+}
+
+.nav-tabs {
+    border-radius: 6px;
+}
+
+#about-things {
+    position: relative;
+    min-height: 150px;
+    background: url("../images/how.jpeg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+}
+
+section .dark-overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Register Page CSS*/
+
+.register {
+    background: -webkit-linear-gradient(left, #008080, #01c4c4);
+    margin-top: 7%;
+    padding: 3%;
+}
+
+.register-left {
+    text-align: center;
+    color: #fff;
+    margin-top: 4%;
+}
+
+.register-left a {
+    border: none;
+    border-radius: 1.5rem;
+    width: 60%;
+    background: #f8f9fa;
+    font-weight: bold;
+    color: #383d41;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+
+.register-right {
+    background: #f8f9fa;
+    border-top-left-radius: 10% 50%;
+    border-bottom-left-radius: 10% 50%;
+}
+
+.register-left img {
+    margin-top: 15%;
+    margin-bottom: 5%;
+    width: 25%;
+    -webkit-animation: mover 2s infinite alternate;
+    animation: mover 1s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+.register-left .text {
+    font-weight: lighter;
+    padding: 12%;
+    margin-top: -9%;
+}
+
+.register .register-form {
+    padding: 10%;
+    margin-top: 10%;
+}
+
+.btnRegister {
+    float: right;
+    margin-top: 10%;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    background: #008080;
+    color: #fff;
+    font-weight: 600;
+    width: 50%;
+    cursor: pointer;
+}
+
+.register .nav-tabs {
+    margin-top: 3%;
+    border: none;
+    background: #008080;
+    border-radius: 1.5rem;
+    width: 28%;
+    float: right;
+}
+
+.register .nav-tabs .nav-link {
+    padding: 2%;
+    height: 34px;
+    font-weight: 600;
+    color: #fff;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+
+.register .nav-tabs .nav-link:hover {
+    border: none;
+}
+
+.register .nav-tabs .nav-link.active {
+    width: 100px;
+    color: #008080;
+    border: 2px solid #008080;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+
+.register-heading {
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: -15%;
+    color: #495057;
+}
+
+/* Login Page CSS*/
+
+.login-container {
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
+
+.login-container .row {
+    z-index: -1;
+}
+
+.login-form {
+    padding: 3%;
+    background: -webkit-linear-gradient(left, #008080, #01c4c4);
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+
+.login-form .btn-white {
+    border: none;
+    border-radius: 1.5rem;
+    width: 40%;
+    background: #f8f9fa;
+    font-weight: bold;
+    color: #383d41;
+    cursor: pointer;
+}
+
+.login-form h3 {
+    text-align: center;
+    color: #fff;
+}
+
+.login-container form {
+    padding: 5%;
+}
+
+.btnSubmit {
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+}
+
+.login-form .btnSubmit {
+    font-weight: 600;
+    color: #008080;
+    background-color: #fff;
+}
+
+.login-form .ForgetPwd {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Alert Message CSS*/
+
+.message {
+    position: fixed;
+    z-index: 999;
+    font-size: 14px;
+}
+
+/* Font Icons CSS */
+
+.font-icons .home-icons {
+    color: #008080;
+    font-size: 72px;
+    border-radius: 100%;
+}
+
+.font-icons p.header {
+    text-decoration: none;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.font-icons p.header::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -8px;
+    left: 0;
+    background-color: #4682b4;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.25s cubic-bezier(1, 0.25, 0, 0.75) 0s;
+    transition: all 0.25s cubic-bezier(1, 0.25, 0, 0.75) 0s;
+}
+
+.font-icons:hover .home-icons {
+    color: #4682b4;
+}
+
+.font-icons:hover p.header::before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
